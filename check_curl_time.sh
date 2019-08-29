@@ -49,7 +49,7 @@ make_request () {
     --write-out "%{time_total}\n"   #you can also use  %{http_code},%{time_connect},%{time_appconnect},%{time_starttransfer}
 }
 
-# here we need to convert floating result to an integer. As we know bash cant compare floating value.
+# here we need to convert floating result to an integer.
 getval=$( printf "%.0f" $make_request )
 
 main "$@"
