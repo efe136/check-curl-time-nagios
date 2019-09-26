@@ -14,6 +14,10 @@ while getopts "w:c:" opt; do
         esac
 done
 
+## you can change value to your custom one
+warn_var=10
+crit_var=15 
+
 set -o errexit
 
 main () {
